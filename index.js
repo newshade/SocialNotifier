@@ -21,12 +21,12 @@ console.log('Telegram bot started.')
 //    counter++
 //}, 5000); 
 
-var ALARM_TEXT = 'Fatal error - machine is about to shut down.'
+var ALARM_TEXT = `${String.fromCodePoint(0x26A0)} OSTRZEŻENIE\n\nPrzekroczono dopuszczalną temperaturę grzania!`
 
 const alarmButton = Telegraf.Extra
   .markdown()
   .markup((m) => m.inlineKeyboard([
-    m.callbackButton(`${String.fromCodePoint(0x2705)} Potwierdź`, 'ack')
+    m.callbackButton(`${String.fromCodePoint(0x2705)}  Potwierdź`, 'ack')
   ]))
 
 bot.hears('/test', (ctx) => 
