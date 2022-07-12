@@ -1,0 +1,9 @@
+{
+    "opcServerIp": "192.168.137.10",
+    "opcServerPort": "4840",
+    "opcUser": "administrator",
+    "opcPass": "Sim@tic1518",
+    "alarmNodeId": "ns=3;s=\"ALARM_Control\".\"AlarmsStatus\"",
+    "ackNodeId": "ns=3;s=\"ALARM_Control\".\"AlarmAck\"",
+    "samplingInterval": 100
+}
