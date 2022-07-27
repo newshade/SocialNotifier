@@ -1,0 +1,16 @@
+version: '2.4'
+services:
+  #### SocialNotifier
+  notifier:
+    container_name: SocialNotifier
+    image: socialnotifier:0.1
+    volumes:
+      - cfg-data:/app/cfg-data/
+    restart: always
+    environment: 
+      - BOT_TOKEN=WPISZ_WŁASNY_TOKEN
+      - USER_ID=WPISZ_WŁASNY_IDENTYFIKATOR
+    network_mode: bridge
+    mem_limit: 100mb
+volumes:
+  cfg-data:
